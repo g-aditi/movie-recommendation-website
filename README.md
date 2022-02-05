@@ -16,7 +16,7 @@ The distance metric used in this recommender is Cosine Similarity. Cosine Simila
 
 ## What The Screens Look Like
 The first screen looks so:
-!(https://github.com/g-aditi/movie-recommendation-website/blob/assets/home-screen.png)
+![home-screen](https://github.com/g-aditi/movie-recommendation-website/blob/main/assets/home-screen.png)
 
 When the entered movie was found, suggestions are listed on this screen like so:
 !(/assets/found-screen.png)
