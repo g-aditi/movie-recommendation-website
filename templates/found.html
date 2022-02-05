@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Movies Like {{ search_name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2020/01/23/17/54/popcorn-4788367_960_720.png">
+  <style>
+
+    html {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #880d1e, #dd2d4a, #f26a8d, #f49cbb);
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    object-position: top;
+  }
+  
+  
+    body {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 2.8vh;
+        line-height: 1.5;
+        color: #000;
+    }
+        
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    figure {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+        
+    .movie{
+        font-family: 'Quicksand', sans-serif;
+        margin: 0 auto;
+        margin-top: 2vh;
+        display: block;
+        background-color: #fff;
+        width: 50vw;
+        height: 92vh;
+        opacity: 0.93;
+        text-align: center;
+        border-radius: 5vh;
+        /* border-width: 20px; */
+        border: 5px black solid;
+        box-shadow: 10px 10px;
+    }
+
+    #home:hover {
+        text-decoration: underline;
+    }
+    
+    table,tr,td,th {
+        margin-top: -3vh;
+        border: 1px solid transparent;
+        border-collapse: collapse;
+        /* font-size: 1px; */
+    }
+
+    td {
+        padding: 10px;  
+    }
+
+    h2 {
+        font-family: 'Pacifico', cursive;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="movie">
+        <h2>If you liked {{ search_name }}, you might like:</h2>
+        <table class="movie_table" align="center">
+            <tr>
+                <th>Movie Title</th>
+                <th>Release Date</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td><a href={{ movie_homepage[0] }} target="_blank">{{ movie_names[0] }}</a></td>
+                    <td>{{ movie_releaseDate[0] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[1] }} target="_blank">{{ movie_names[1] }}</a></td>
+                    <td>{{ movie_releaseDate[1] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[2] }} target="_blank">{{ movie_names[2] }}</a></td>
+                    <td>{{ movie_releaseDate[2] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[3] }} target="_blank">{{ movie_names[3] }}</a></td>
+                    <td>{{ movie_releaseDate[3] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[4] }} target="_blank">{{ movie_names[4] }}</a></td>
+                    <td>{{ movie_releaseDate[4] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[5] }} target="_blank">{{ movie_names[5] }}</a></td>
+                    <td>{{ movie_releaseDate[5] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[6] }} target="_blank">{{ movie_names[6] }}</a></td>
+                    <td>{{ movie_releaseDate[6] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[7] }} target="_blank">{{ movie_names[7] }}</a></td>
+                    <td>{{ movie_releaseDate[7] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[8] }} target="_blank">{{ movie_names[8] }}</a></td>
+                    <td>{{ movie_releaseDate[8] }}</td>
+                </tr>
+                <tr>
+                    <td><a href={{ movie_homepage[9] }} target="_blank">{{ movie_names[9] }}</a></td>
+                    <td>{{ movie_releaseDate[9] }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a id="home" href="onClick={window.history.back()}">Home</a>
+        <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>    
+  
+</body>
+</html>

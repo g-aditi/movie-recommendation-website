@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>What Should I Watch?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2020/01/23/17/54/popcorn-4788367_960_720.png">
+    <style>
+
+      html {
+          height: 100vh;
+          width: 100vw; 
+          background-image: linear-gradient(to right, #3f37c9,#4361ee, #4895ef, #4cc9f0);
+          background-size:cover;
+          background-repeat: no-repeat;
+      }
+        
+      body {    
+          background-repeat: no-repeat;
+          font-weight: 300;
+          font-size: 100%;    
+          padding: 20px;    
+      }
+
+
+      a {
+          text-decoration: none;
+      }
+        
+      .movie {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+      }
+
+      .wrapper {
+          margin: auto;
+      }
+
+      #movie_name {
+          width: 40vw;
+          height: 8vh;
+          padding-left: 2vw;
+          margin-top: 5vh;
+          border-radius: 20px;
+          border: 1px solid grey;
+          margin: 0 auto;
+          font-family: 'Quicksand', sans-serif;
+      }
+        
+      .submission_button {
+          width: 8vw;
+          padding: 0.5vw;
+          margin-top: 2vw;
+          margin-right: 20px;
+          border-radius: 50px;
+          color: white;
+          background-color: #430EBE;
+          border-style: none;
+          cursor: pointer;
+          font-family: 'Quicksand', sans-serif;
+      }
+
+      .submission_button:hover {
+          position: relative; 
+          top: 2px;
+          border: 2px #fff;
+          background-image: linear-gradient(to right, #430EBE, #560bad, #7209b7);
+          transition: 500ms;
+      }
+        
+      /* @media screen and (max-width:600px) {
+          .movie{
+              padding-top: 11vh;
+              padding-bottom: 11vh;
+          }
+      } */
+        
+      h2 {
+          margin-top: 20vh;
+          text-align: center;
+          font-family: 'Pacifico', cursive;
+          color: #fff;
+          font-size: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+    <div class="movie">
+      <h2>What Should I Watch Today?</h2>
+      <form action="{{ url_for('main') }}" method="POST">
+        <div class="wrapper">
+          <input type="text" id="movie_name" name="movie_name" placeholder="Type the full name of a movie you like." autocorrect="off" autocapitalize="off" required />
+        </div>
+        <div class="wrapper">
+          <input type="submit" class="submission_button" value="Submit"/>
+          <input type="reset" class="submission_button" value="Reset"/>
+        </div>
+      </form>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
+  </div>
+  </body>
+</html>
+
+
