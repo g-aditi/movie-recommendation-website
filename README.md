@@ -19,8 +19,8 @@ The first screen looks so:
 ![home-screen](https://github.com/g-aditi/movie-recommendation-website/blob/main/assets/home-screen.png)
 
 When the entered movie was found, suggestions are listed on this screen like so:
-!(/assets/found-screen.png)
+![found-screen](https://github.com/g-aditi/movie-recommendation-website/blob/main/assets/found-screen.png)
 
 If a movie is not found, this page is visible:
-!(/assets/not-found-screen.png)
+![not-found-screen](https://github.com/g-aditi/movie-recommendation-website/blob/main/assets/not-found-screen.png)
 
